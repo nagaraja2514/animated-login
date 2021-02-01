@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimatedLogin</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: aquamarine;
+        }
+
+        .box {
+            width: 300px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: cornflowerblue;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .box input[type="text"],
+        .box input[type="password"] {
+            border: 0px;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #87c0e5;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: rgb(252, 252, 252);
+            border-radius: 30px;
+            transition: 0.25s;
+        }
+
+        .box input[type="text"]:focus,
+        .box input[type="password"] {
+            width: 250px;
+            border-color: fuchsia;
+        }
+
+        .box input[type="button"] {
+            border: 0px;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #1ff88c;
+            padding: 14px 40px;
+            outline: none;
+            color: rgb(252, 252, 252);
+            border-radius: 30px;
+            transition: 0.25s;
+
+        }
+
+        .box input[ type="button"]:hover {
+            background: greenyellow;
+            cursor: pointer;
+        }
+
+
+        .box h1 {
+            text-align: center;
+            color: cornsilk;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="box">
+        <h1>Login</h1>
+        <input type="text" placeholder="User Name">
+        <input type="text" placeholder="Password">
+        <input type="button" value="Submit">
+
+    </form>
+</body>
+
+</html>
